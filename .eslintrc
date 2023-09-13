@@ -41,6 +41,7 @@
     "@typescript-eslint/consistent-type-definitions": [1, "type"],
     "@typescript-eslint/prefer-optional-chain": [1],
     "@typescript-eslint/consistent-type-assertions": [1],
+    "@typescript-eslint/no-non-null-assertion": 0,
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {

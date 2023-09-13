@@ -12,8 +12,8 @@ export default {
       },
     ],
   },
-  roots: ['src'],
+  roots: ['YOUR_SRC_DIR_COULD_BE_DOT'],
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts'],
+  collectCoverageFrom: ['YOUR_SRC_DIR_COULD_BE_DOT/**/*.ts'],
   coverageReporters: ['json', 'lcov', 'text', 'clover'],
 } satisfies Config;

@@ -33,7 +33,7 @@
   "staticFiles": ["YOUR_SRC_DIR_COULD_BE_DOT/**/static/**/*"],
   "scripts": {
     "test": "jest --no-cache -w 4",
-    "clean": "rm -rf dist && rm tsconfig.tsbuildinfo",
+    "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo",
     "typecheck": "tsc --noEmit",
     "build": "pnpm clean && tsc && gulp copy-static",
     "eslint": "eslint --max-warnings=0 '**/*.{ts,js,json}'",

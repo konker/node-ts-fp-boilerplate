@@ -1,10 +1,12 @@
 import gulp from 'gulp';
 import packageJson from './package.json' assert { type: 'json' };
 
-gulp.task('copy-static', async () => {
-  return gulp
-    .src(packageJson.staticFiles, {
-      base: 'YOUR_SRC_DIR_COULD_BE_DOT',
-    })
-    .pipe(gulp.dest('dist'));
-});
+gulp.task('copy-static', async () =>
+  packageJson.staticFiles
+    ? gulp
+        .src(packageJson.staticFiles || '', {
+          base: '.',
+        })
+        .pipe(gulp.dest('dist'))
+    : undefined
+);

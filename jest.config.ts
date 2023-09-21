@@ -14,7 +14,7 @@ export default {
   },
   roots: ['YOUR_SRC_DIR_COULD_BE_DOT'],
   testMatch: ['**/test/test-unit/**/*.(js|ts)', '**/*.test.(js|ts)'],
-  modulePathIgnorePatterns: ['<rootDir>/dist/', '<rootDir>/node_modules/'],
+  modulePathIgnorePatterns: ['<rootDir>/dist', '<rootDir>/.build', '<rootDir>/.sst', '<rootDir>/node_modules'],
   moduleFileExtensions: ['js', 'ts', 'json', 'node'],
   collectCoverage: true,
   collectCoverageFrom: ['YOUR_SRC_DIR_COULD_BE_DOT/**/*.ts'],

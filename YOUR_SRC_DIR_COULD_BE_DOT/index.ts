@@ -8,5 +8,5 @@ export function f(a: number, b: number): number {
 }
 
 export async function g(): Promise<string> {
-  return fs.promises.readFile(path.join(__dirname, 'static', 'styles.css'), 'utf8');
+  return fs.promises.readFile(path.join(__dirname, 'lib', 'static', 'styles.css'), 'utf8');
 }

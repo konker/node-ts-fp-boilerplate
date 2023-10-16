@@ -3,14 +3,23 @@
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["@typescript-eslint", "import", "simple-import-sort", "prettier", "fp"],
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "simple-import-sort",
+    "prettier",
+    "fp",
+    "deprecation",
+    "sort-destructure-keys"
+  ],
   "extends": [
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:prettier/recommended",
-    "plugin:fp/recommended"
+    "plugin:fp/recommended",
+    "plugin:deprecation/recommended"
   ],
   "ignorePatterns": ["*.json", "jest.config.ts"],
   "rules": {
@@ -62,6 +71,7 @@
     "import/order": 0,
     "import/named": 0,
     "simple-import-sort/imports": 1,
+    "sort-destructure-keys/sort-destructure-keys": 2,
     "prettier/prettier": [
       "error",
       {

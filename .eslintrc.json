@@ -23,9 +23,9 @@
   ],
   "ignorePatterns": ["*.json", "jest.config.ts"],
   "rules": {
-    "@typescript-eslint/array-type": [1, { "default": "generic" }],
+    "@typescript-eslint/array-type": ["warn", { "default": "generic" }],
     "@typescript-eslint/naming-convention": [
-      1,
+      "warn",
       {
         "selector": "default",
         "format": ["PascalCase", "camelCase", "UPPER_CASE"],
@@ -33,24 +33,23 @@
         "trailingUnderscore": "allow"
       }
     ],
-    "@typescript-eslint/explicit-function-return-type": 0,
-    "@typescript-eslint/prefer-interface": 0,
-    "@typescript-eslint/no-empty-interface": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-inferrable-types": 1,
-    "@typescript-eslint/no-object-literal-type-assertion": [0],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/prefer-interface": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": "warn",
     "@typescript-eslint/no-unused-vars": [
-      1,
+      "warn",
       {
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_",
         "ignoreRestSiblings": true
       }
     ],
-    "@typescript-eslint/consistent-type-definitions": [1, "type"],
-    "@typescript-eslint/prefer-optional-chain": [1],
-    "@typescript-eslint/consistent-type-assertions": [1],
-    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
+    "@typescript-eslint/prefer-optional-chain": ["warn"],
+    "@typescript-eslint/consistent-type-assertions": ["warn"],
+    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
@@ -66,12 +65,12 @@
         "allowTemplateLiterals": true
       }
     ],
-    "import/no-default-export": 1,
-    "import/no-unresolved": 0,
-    "import/order": 0,
-    "import/named": 0,
-    "simple-import-sort/imports": 1,
-    "sort-destructure-keys/sort-destructure-keys": 2,
+    "import/no-default-export": "warn",
+    "import/no-unresolved": "off",
+    "import/order": "off",
+    "import/named": "off",
+    "simple-import-sort/imports": "warn",
+    "sort-destructure-keys/sort-destructure-keys": "error",
     "prettier/prettier": [
       "error",
       {
@@ -88,7 +87,7 @@
         "jest": true
       },
       "rules": {
-        "fp/no-unused-expression": 0,
+        "fp/no-unused-expression": "off",
         "fp/no-nil": 0
       }
     },

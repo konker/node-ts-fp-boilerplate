@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@effect/language-service": "^0.0.21",
+    "@konker.dev/effect-ts-prelude": "latest",
     "@types/jest": "^29.5.5",
     "@types/node": "^20.6.2",
     "@typescript-eslint/eslint-plugin": "^6.7.0",

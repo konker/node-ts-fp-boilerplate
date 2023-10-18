@@ -1,8 +1,8 @@
 {
   "name": "@konker.dev/node-ts-fp-boilerplate",
   "version": "0.0.1",
-  "description": "Boilerplate for Node.js TypeScript projects based on Effect-ts",
   "author": "Konrad Markus <konker@iki.fi>",
+  "description": "Boilerplate for Node.js TypeScript projects based on Effect-ts",
   "keywords": [
     "node",
     "boilerplate",
@@ -19,6 +19,7 @@
     "effect": "^2.0.0-next.34"
   },
   "devDependencies": {
+    "@effect/language-service": "^0.0.21",
     "@types/jest": "^29.5.5",
     "@types/node": "^20.6.2",
     "@typescript-eslint/eslint-plugin": "^6.7.0",

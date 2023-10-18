@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "author": "Konrad Markus <konker@iki.fi>",
   "description": "Boilerplate for Node.js TypeScript projects based on Effect-ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konkerdotdev/node-ts-fp-boilerplate"
+  },
   "keywords": [
     "node",
     "boilerplate",

@@ -15,6 +15,7 @@ Copy the contents of this repo, and:
 - Run: `pnpm dlx husky-init && pnpm install`
 - Replace this with your actual README.md
 - Replace ISC.LICENSE as needed
+- Amend .github/workflows/cd.yml as needed
 
 ## For An Existing Project
 

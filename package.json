@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "author": "Konrad Markus <konker@iki.fi>",
   "description": "Boilerplate for Node.js TypeScript projects based on Effect-ts",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*",
+    "!dist/**/*.test.*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/konkerdotdev/node-ts-fp-boilerplate"
@@ -14,7 +20,6 @@
     "functional-programming",
     "effect-ts"
   ],
-  "license": "ISC",
   "packageManager": "pnpm@8",
   "dependencies": {
     "@effect/data": "^0.18.5",
@@ -66,7 +71,7 @@
     "lint-check": "pnpm run eslint-check && pnpm run prettier-check && pnpm run circular-check",
     "lint-fix": "pnpm run eslint-fix && pnpm run prettier-fix",
     "pre-push": "pnpm run lint-check && pnpm run typecheck",
-    "ci": "pnpm run lint-check && pnpm run typecheck && pnpm run test && pnpm run build",
-    "cd": "pnpm run ci && pnpm publish --access public"
+    "ci": "pnpm run lint-check && pnpm run typecheck && pnpm run test",
+    "cd": "pnpm run build && pnpm publish --access public"
   }
 }

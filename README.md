@@ -2,8 +2,8 @@
 
 A boilerplate for a [Node.js](https://nodejs.org/) project based on [Effect-TS](https://www.effect.website/)
 
-[![jest tested](https://github.com/konker/node-ts-fp-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/konker/node-ts-fp-boilerplate/actions/workflows/ci.yml)
-![GitHub](https://img.shields.io/github/license/konker/node-ts-fp-boilerplate)
+[![jest tested](https://github.com/konkerdotdev/node-ts-fp-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/konkerdotdev/node-ts-fp-boilerplate/actions/workflows/ci.yml)
+![GitHub](https://img.shields.io/github/license/konkerdotdev/node-ts-fp-boilerplate)
 
 ## Usage
 

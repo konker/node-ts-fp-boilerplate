@@ -1,7 +1,7 @@
 {
   "name": "@konker.dev/node-ts-fp-boilerplate",
   "version": "0.0.1",
-  "author": "Konrad Markus <konker@iki.fi>",
+  "author": "Konrad Markus <mail@konker.dev>",
   "description": "Boilerplate for Node.js TypeScript projects based on Effect-ts",
   "license": "ISC",
   "main": "dist/index.js",

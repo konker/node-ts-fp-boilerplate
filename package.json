@@ -25,11 +25,11 @@
     "@effect/data": "^0.18.5",
     "@effect/io": "^0.40.3",
     "@effect/schema": "^0.36.5",
+    "@konker.dev/effect-ts-prelude": "latest",
     "effect": "^2.0.0-next.34"
   },
   "devDependencies": {
     "@effect/language-service": "^0.0.21",
-    "@konker.dev/effect-ts-prelude": "latest",
     "@types/jest": "^29.5.5",
     "@types/node": "^20.6.2",
     "@typescript-eslint/eslint-plugin": "^6.7.0",

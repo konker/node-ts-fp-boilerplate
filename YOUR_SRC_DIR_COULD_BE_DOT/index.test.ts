@@ -9,7 +9,7 @@ describe('index', () => {
 
   describe('g', () => {
     it('should work as expected', async () => {
-      expect(await unit.g()).toEqual(`body {\n  background-color: #0ff;\n}\n`);
+      expect(await unit.g()).toEqual('body {\n  background-color: #0ff;\n}\n');
     });
   });
 });

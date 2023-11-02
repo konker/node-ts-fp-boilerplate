@@ -12,6 +12,7 @@ Copy the contents of this repo, and:
 - Search and replace files for `YOUR_SRC_DIR_COULD_BE_DOT` and substitute for the desired source directory
 - Edit package.json `staticFiles` property as needed
 - Run `pnpm install`
+- Run `git init`
 - Run: `pnpm dlx husky-init && pnpm install`
 - Replace this with your actual README.md
 - Replace ISC.LICENSE as needed

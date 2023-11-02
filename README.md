@@ -17,6 +17,10 @@ Copy the contents of this repo, and:
 - Replace this with your actual README.md
 - Replace ISC.LICENSE as needed
 - Amend .github/workflows/cd.yml to replace `PATH_TO_PACKAGE_JSON`
+- Remember:
+  - README.md title / content
+  - package.json name
+  - package.json description
 
 ## For An Existing Project
 

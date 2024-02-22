@@ -16,10 +16,10 @@ dependencies:
     version: 0.36.5(@effect/data@0.18.7)(@effect/io@0.41.2)
   '@konker.dev/effect-ts-prelude':
     specifier: latest
-    version: 0.0.5(@effect/data@0.18.7)(@effect/io@0.41.2)(@effect/schema@0.36.5)(effect@2.0.1)
+    version: 0.0.12(@effect/schema@0.36.5)(effect@2.2.5)
   effect:
-    specifier: ^2.0.1
-    version: 2.0.1
+    specifier: 2.2.5
+    version: 2.2.5
 
 devDependencies:
   '@effect/language-service':
@@ -814,18 +814,14 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@konker.dev/effect-ts-prelude@0.0.5(@effect/data@0.18.7)(@effect/io@0.41.2)(@effect/schema@0.36.5)(effect@2.0.1):
-    resolution: {integrity: sha512-P02/46ybsODpjGL4hEMlohBp6Wcpf59QJqRPA8MEgSPAYOFbtOMetPQPn6dlYEASWdE6U68V2DCebIPtbuRYDA==}
+  /@konker.dev/effect-ts-prelude@0.0.12(@effect/schema@0.36.5)(effect@2.2.5):
+    resolution: {integrity: sha512-CeZUmNSsG8DNpMbsk3dq0ceMsTSDqVUZv/mdLOIXfeDFPU050vm/gdDYcvlYG0IsS5aBzcsWae6ksiR60utO5Q==}
     peerDependencies:
-      '@effect/data': ^0.18.7
-      '@effect/io': ^0.41.2
-      '@effect/schema': ^0.36.5
-      effect: ^2.0.1
+      '@effect/schema': ^0.61.3
+      effect: 2.2.5
     dependencies:
-      '@effect/data': 0.18.7
-      '@effect/io': 0.41.2(@effect/data@0.18.7)
       '@effect/schema': 0.36.5(@effect/data@0.18.7)(@effect/io@0.41.2)
-      effect: 2.0.1
+      effect: 2.2.5
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -2429,8 +2425,8 @@ packages:
       object.defaults: 1.1.0
     dev: true
 
-  /effect@2.0.1:
-    resolution: {integrity: sha512-S3QLBZZV5+zG6/kFIWUEqG265LRCEUZUPPi2dydkGNUAHaWO1W65xoDU+8pWF3cwp6FGkvLJ/MFx8R7SPdDrPw==}
+  /effect@2.2.5:
+    resolution: {integrity: sha512-F1bfJXeecK6WpZDSU1UK8C8tUr3n7AqGVL1b8HWeVlHD4192x+6yN0Eb7Qa0CASike5dsbloTfidxBZFr0IpVg==}
     dev: false
 
   /electron-to-chromium@1.4.516:

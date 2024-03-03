@@ -5,21 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@effect/data':
-    specifier: ^0.18.7
-    version: 0.18.7
-  '@effect/io':
-    specifier: ^0.41.2
-    version: 0.41.2(@effect/data@0.18.7)
   '@effect/schema':
-    specifier: ^0.36.5
-    version: 0.36.5(@effect/data@0.18.7)(@effect/io@0.41.2)
+    specifier: ^0.63.2
+    version: 0.63.2(effect@2.4.1)(fast-check@3.15.1)
   '@konker.dev/effect-ts-prelude':
-    specifier: latest
-    version: 0.0.12(@effect/schema@0.36.5)(effect@2.2.5)
+    specifier: ^0.0.13
+    version: 0.0.13(@effect/schema@0.63.2)(effect@2.4.1)
   effect:
-    specifier: 2.2.5
-    version: 2.2.5
+    specifier: ^2.4.1
+    version: 2.4.1
 
 devDependencies:
   '@effect/language-service':
@@ -463,31 +457,18 @@ packages:
       node-source-walk: 5.0.2
     dev: true
 
-  /@effect/data@0.18.7:
-    resolution: {integrity: sha512-r7C9VjavmG85wb5BOvcbbKGioPJCoBAFsJVOUNWlxZBRIU+l68ENpsyzCkWsU7dP4teAztjBZ89O3hVhBX0Huw==}
-    dev: false
-
-  /@effect/io@0.41.2(@effect/data@0.18.7):
-    resolution: {integrity: sha512-kSMMQbowTPhUGQIo+B/5F6WWynY14IWr9avLAv4oaZ6PtjP+w8sOOdO0YU3a+idBaO12uIuvba2ZFR6LnASM6w==}
-    peerDependencies:
-      '@effect/data': ^0.18.5
-    dependencies:
-      '@effect/data': 0.18.7
-    dev: false
-
   /@effect/language-service@0.0.21:
     resolution: {integrity: sha512-e8vfKbjnbYiyneBincEFS0tzXluopGK77OkVFbPRtUbNDS5tJfb+jiwOQEiqASDsadcZmd+9J9+Q6v/z7GuN2g==}
     dev: true
 
-  /@effect/schema@0.36.5(@effect/data@0.18.7)(@effect/io@0.41.2):
-    resolution: {integrity: sha512-E8KZ17DqZJl7E/eEVTkxb2NEv6vYhab79HugHi10krd2Gm3vOJvWs+nRgtPhI+0dvkXVxzCcY8bLfkND2F0rBg==}
+  /@effect/schema@0.63.2(effect@2.4.1)(fast-check@3.15.1):
+    resolution: {integrity: sha512-piS+6dlGmcX8sAPGXdY4T6QmBbY2YXVnYjUguXpClk6FL7lQ9u2aIDib5kjCpciawJjil2VwltmPnMj0NJKKQQ==}
     peerDependencies:
-      '@effect/data': ^0.18.5
-      '@effect/io': ^0.40.1
+      effect: ^2.4.1
+      fast-check: ^3.13.2
     dependencies:
-      '@effect/data': 0.18.7
-      '@effect/io': 0.41.2(@effect/data@0.18.7)
-      fast-check: 3.13.0
+      effect: 2.4.1
+      fast-check: 3.15.1
     dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.49.0):
@@ -814,14 +795,14 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@konker.dev/effect-ts-prelude@0.0.12(@effect/schema@0.36.5)(effect@2.2.5):
-    resolution: {integrity: sha512-CeZUmNSsG8DNpMbsk3dq0ceMsTSDqVUZv/mdLOIXfeDFPU050vm/gdDYcvlYG0IsS5aBzcsWae6ksiR60utO5Q==}
+  /@konker.dev/effect-ts-prelude@0.0.13(@effect/schema@0.63.2)(effect@2.4.1):
+    resolution: {integrity: sha512-dZw6PAlnIB+33bETsHvxRclYchIdIvqEulCClgtzuMEN5Ktr0mJwTCpQZXs5TfwTrqC4IMEz/5pvaieVrlPfsA==}
     peerDependencies:
-      '@effect/schema': ^0.61.3
-      effect: 2.2.5
+      '@effect/schema': ^0.63.2
+      effect: ^2.4.1
     dependencies:
-      '@effect/schema': 0.36.5(@effect/data@0.18.7)(@effect/io@0.41.2)
-      effect: 2.2.5
+      '@effect/schema': 0.63.2(effect@2.4.1)(fast-check@3.15.1)
+      effect: 2.4.1
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -2425,8 +2406,8 @@ packages:
       object.defaults: 1.1.0
     dev: true
 
-  /effect@2.2.5:
-    resolution: {integrity: sha512-F1bfJXeecK6WpZDSU1UK8C8tUr3n7AqGVL1b8HWeVlHD4192x+6yN0Eb7Qa0CASike5dsbloTfidxBZFr0IpVg==}
+  /effect@2.4.1:
+    resolution: {integrity: sha512-YsoMB/EGCohGKFyTPYqaFe2B7UCU2MM303dkoowF8DNOdks/4q/00cyhTbBUmM/0FMDoUPmUi/AJ0Aj3E7vO1A==}
     dev: false
 
   /electron-to-chromium@1.4.516:
@@ -3013,8 +2994,8 @@ packages:
       time-stamp: 1.1.0
     dev: true
 
-  /fast-check@3.13.0:
-    resolution: {integrity: sha512-m6+3gZ/yTiCWTuV/1e/UuPPjyyyHdQ5gu0pMd84C6705VTDjAgAE6nqFT5jhgegFllCJ95yOzBpqvJSs2DZAxQ==}
+  /fast-check@3.15.1:
+    resolution: {integrity: sha512-GutOXZ+SCxGaFWfHe0Pbeq8PrkpGtPxA9/hdkI3s9YzqeMlrq5RdJ+QfYZ/S93jMX+tAyqgW0z5c9ppD+vkGUw==}
     engines: {node: '>=8.0.0'}
     dependencies:
       pure-rand: 6.0.3

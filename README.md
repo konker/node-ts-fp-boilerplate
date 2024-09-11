@@ -3,7 +3,6 @@
 A boilerplate for a [Node.js](https://nodejs.org/) project based on [Effect-TS](https://www.effect.website/)
 
 ![License](https://img.shields.io/github/license/konkerdotdev/node-ts-fp-boilerplate)
-[![NPM Version](https://img.shields.io/npm/v/%40konker.dev%2Fnode-ts-fp-boilerplate)](https://www.npmjs.com/package/@konker.dev/node-ts-fp-boilerplate)
 [![CI](https://github.com/konkerdotdev/node-ts-fp-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/konkerdotdev/node-ts-fp-boilerplate/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/konkerdotdev/node-ts-fp-boilerplate/graph/badge.svg?token=W3BFLXCWTH)](https://codecov.io/gh/konkerdotdev/node-ts-fp-boilerplate)
 
